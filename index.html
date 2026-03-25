@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>AI Resume Optimizer</h1>
+    <p class="subtitle">Paste your resume and a job description to get an ATS score and optimization tips.</p>
+
+    <div class="input-section">
+      <div class="input-group">
+        <label>Job Description</label>
+        <textarea id="job_description" placeholder="Paste the job description here..."></textarea>
+      </div>
+      <div class="input-group">
+        <label>Your Resume</label>
+        <textarea id="resume" placeholder="Paste your resume here..."></textarea>
+      </div>
+      <button id="analyzeBtn">Optimize Resume</button>
+    </div>
+
+    <div class="results-section" id="results" style="display:none;">
+
+      <div class="score-box">
+        <span class="score-label">ATS Score</span>
+        <span class="score-value" id="atsScore"></span>
+      </div>
+
+      <p id="summary"></p>
+
+      <div class="two-col">
+        <div class="card">
+          <h3>Strong matches</h3>
+          <ul id="strongMatches"></ul>
+        </div>
+        <div class="card">
+          <h3>Missing keywords</h3>
+          <ul id="missingKeywords"></ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Suggested improvements</h3>
+        <div id="improvements"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="static/app.js"></script>
+</body>
+</html>
