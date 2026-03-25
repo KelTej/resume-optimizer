@@ -13,7 +13,7 @@ Analyzes your resume against a job description and returns:
 
 ## Why I built this
 
-ATS systems filter out up to 75% of resumes before a human ever sees them. This tool helps job seekers understand exactly how their resume stacks up against a specific job posting and what to fix to get past automated screening.
+ATS systems filter out up to 75% of resumes before a human even get to see them. This tool can be extra helpful for job seekers in understanding exactly how their resume stacks up against a specific job posting and how to tailor it to get past automated screening.
 
 ## Tech stack
 
